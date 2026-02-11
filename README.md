@@ -21,29 +21,31 @@ pip install requests
 
 ## Usage
 
-### Method 1: Check the provided audio list
-
-Simply run the script:
+Simply run the script and enter your file path when prompted:
 
 ```bash
 python roblox_audio_checker.py
 ```
 
-This will automatically check all audios from your uploaded file and generate a results file.
-
-### Method 2: Check your own audio list
-
-1. Replace the `input_file` path in the `main()` function with your file path:
-
-```python
-input_file = "path/to/your/audio_list.txt"
+The script will ask:
+```
+Which file:
 ```
 
-2. Run the script:
-
-```bash
-python roblox_audio_checker.py
+Enter the path to your audio list file:
 ```
+Which file: C:\Users\YourName\Documents\audio_list.txt
+```
+
+Or on Mac/Linux:
+```
+Which file: /home/username/audio_list.txt
+```
+
+The script will:
+- Check all audios in the file
+- Generate a results file (`audio_check_results.txt`) in the same directory as your input file
+- Display real-time progress in the console
 
 ## Input Format
 
